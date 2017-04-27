@@ -1,0 +1,40 @@
+Database - gps
+Users    - root
+Password - NONE
+
+Create 3 Tables
+	- users
+	- markers
+	- colours
+	
+Insert Data to colours table
+	Data
+		- red
+		- blue
+		- purple
+		- yellow
+		- green
+
+CREATE TABLE `users` (
+  `user_id` int(5) NOT NULL AUTO_INCREMENT,
+  `user_name` varchar(25) NOT NULL,
+  `user_email` varchar(60) NOT NULL,
+  `user_pass` varchar(60) NOT NULL,
+  'colour' varchar(10) NOT NULL,
+  PRIMARY KEY (`user_id`),
+  UNIQUE KEY `user_email` (`user_email`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+
+  CREATE TABLE colours (
+      `colour` VARCHAR(10) NOT NULL)
+	  
+ CREATE TABLE markers (
+      `id` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+      `name` VARCHAR(60) NOT NULL,
+      `lat` VARCHAR(30) NOT NULL,
+      `lng` VARCHAR(30) NOT NULL,
+      `ip` VARCHAR(20) NOT NULL)
+	  
+	  
+
